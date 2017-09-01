@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.rnkit</groupId>
+    <artifactId>appstore</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>appstore</name>
+    <description>scrape data from the itunes app store</description>
+    <url>https://github.com/rnkit/rnkit-appstore</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <issueManagement>
+        <system>Github Issue</system>
+        <url>https://github.com/rnkit/rnkit-appstore/issues</url>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>SimMan</name>
+            <email>liwei0990@gmail.com</email>
+        </developer>
+    </developers>
+
+    <organization>
+        <name>RNKit Group</name>
+        <url>https://github.com/rnkit</url>
+    </organization>
+
+    <scm>
+        <url>https://github.com/rnkit/rnkit-appstore</url>
+        <developerConnection>scm:git@github.com:rnkit/rnkit-appstore.git</developerConnection>
+        <connection>scm:git:https://git@github.com/rnkit/rnkit-appstore.git</connection>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <configuration>
+                    <aggregate>true</aggregate>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
