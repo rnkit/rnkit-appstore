@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * Name: AppInfo
- * Author: SimMan <liwei0990@gmail.com>
+ * Author: SimMan [liwei0990@gmail.com]
  * CreatedAt: 01/09/2017
  * Description:
  * Copyright (c) 2017 Toutoo, Inc.
@@ -27,7 +27,6 @@ public class AppInfo {
             Map<String, String> reqMap = new LinkedHashMap<String, String>();
             reqMap.put("id", appId.toString());
             String resStr = Common.sendGet(BASE_URL, reqMap);
-            System.out.println(resStr);
             if (resStr != null && resStr.length() > 0) {
                 try {
                     Gson gson = new Gson();

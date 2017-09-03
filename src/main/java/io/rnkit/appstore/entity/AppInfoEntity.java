@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * Name: AppInfoEntity
- * Author: SimMan <liwei0990@gmail.com>
+ * Author: SimMan [liwei0990@gmail.com]
  * CreatedAt: 01/09/2017
  * Description:
  * Copyright (c) 2017 Toutoo, Inc.
